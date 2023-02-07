@@ -1,0 +1,91 @@
+html
+{
+	scroll-behavior: smooth;
+}
+
+body 
+{
+	background-color: black;
+}
+.nav-link
+{
+	color: #fdfeff;
+}
+.nav-link:hover
+{
+	color: #fec544;
+}
+.nav-link:active
+{
+	color: #fdfeff;
+}
+.nav-link:visited
+{	
+	color: none;
+}
+.card
+{
+	background-color: black;
+	margin-top: 180px;
+	margin-left: 100px;
+}
+.card img
+{
+	margin-top: -80px;
+}
+.card h1 
+{
+	font-size: 80px;
+	font-weight: 900;
+	font-family: sans-serif;
+	color: #fdfeff;
+}
+
+.card h3
+{
+	color: dimgrey;
+}
+
+.card button
+{
+	width: 160px;
+	height: 45px;
+	border-radius: 30px;
+	font-family: sans-serif;
+	margin-top: 10px;
+}
+
+.card h4
+{
+	color: #ffc107;
+	font-weight: 280;
+}
+
+.divider
+{
+	margin-top: 250px;
+}
+
+#section_title
+{
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 24;
+	font-weight: 500;
+	color: #fec544;
+}
+
+.aboutme h2
+{
+	font-family: sans-serif;
+	color: #fdfeff;
+}
+.aboutme h4
+{
+	color: #fec544;
+	font-weight: 150;
+}
+.aboutme p
+{
+	color: #fdfeff;
+}

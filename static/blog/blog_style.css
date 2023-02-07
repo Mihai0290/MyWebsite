@@ -1,0 +1,13 @@
+.post a {
+    color: black;
+    text-decoration: none;
+}
+.post a:hover {
+    color: blue;
+}
+.post h3 {
+    color: green;
+}
+body {
+    color: red;
+}

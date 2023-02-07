@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'base/base_style.css' %}">
+    {% block header %} {% endblock header %}
+</head>
+
+<body>
+    <ul class="navbar">
+        <li><a href="{% url 'homepage' %}">Acasa</a></li>
+        <li><a href="{% url 'news' %}" >Noutati</a></li>
+        <li><a href="{% url 'blog' %}">Blog</a></li>
+    </ul>
+    <br>
+    <br>
+    <div class="content">
+        {% block content %}
+
+        {% endblock %}
+    </div>
+</body>
+
+</html>
