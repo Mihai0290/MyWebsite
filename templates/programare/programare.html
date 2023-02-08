@@ -1,0 +1,22 @@
+{% extends "programare/programare_base.html" %}
+{% load static %}
+
+{% block title%} Invata Programare {% endblock %}
+
+{% block head %}
+	<link rel="stylesheet" type="text/css" href="{% static 'programare/programare.css' %}">
+{% endblock head %}
+{% block content %}
+<div class="container">
+	<div class="row">
+		<h1 id="big_title">Învață programare</h1>
+		<h4 id="subtitle">Învață programare de la 0.</h4>
+	</div>
+	<br>
+	<div class="row">
+		<div class="col text-center">
+			<button type="button" class="btn btn-warning bt" onclick="window.location.href='./lectii'">Mergi la lecții</button>
+		</div>
+	</div>
+</div>
+{% endblock content %}

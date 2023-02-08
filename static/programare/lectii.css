@@ -1,0 +1,17 @@
+h4, h2, p
+{
+	color: white;
+}
+ul
+{
+	list-style-type: none;
+}
+li a
+{
+	color: white;
+	text-decoration: none;
+}
+li
+{
+	margin-top: 10px;
+}

@@ -1,0 +1,25 @@
+{% extends "programare/programare_base.html" %}
+{% load static %}
+
+{% block title%} Invata Programare {% endblock %}
+
+{% block head %}
+	<link rel="stylesheet" type="text/css" href="{% static 'programare/lectii.css' %}">
+{% endblock head %}
+{% block content %}
+<div class="container">
+	<h4>Bazele</h4>
+	<ul>
+		<li><a href="./1">Introducere</a></li>
+		<li><a href="">O scurta istorie a limbajului C</a></li>
+		<li><a href="">Avantajele folosirii limbajului C</a></li>
+		<li><a href="">Hello, World!</a></li>	
+	</ul>
+	<br>
+	<h4>Aprofundare</h4>
+	<ul>
+		<li><a href="">Pointeri</a></li>
+		<li><a href="">Referinte</a></li>
+	</ul>
+</div>
+{% endblock content %}
