@@ -1,0 +1,12 @@
+{% extends "./base.html" %}
+{% load static %}
+{% block header %}
+<link rel="stylesheet" type="text/css" href="{% static 'blog/view_post.css' %}">
+{% endblock %}
+
+{% block content %}
+<br>
+<br>
+<h1>{{post.name}}</h1>
+<p>{{post.content}}</p>
+{% endblock %}

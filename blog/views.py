@@ -1,4 +1,4 @@
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseNotFound
 from . import models
 from django.template import loader, Context
 import datetime
@@ -15,3 +15,11 @@ def news(request):
     t = loader.get_template('blog/news.html')
     context = {"posts": posts}
     return HttpResponse(t.render(context))
+
+def view_post(request, postname):
+    post = models.Post.objects.all().filter(name=postname)
+    if(len(post) == 0):
+        return HttpResponseNotFound("Aceasta postere nu exista")
+    template = loader.get_template('blog/view_post.html')
+    context = {"post": post[0]}
+    return HttpResponse(template.render(context))

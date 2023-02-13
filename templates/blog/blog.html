@@ -1,4 +1,4 @@
-{% extends "base/base.html" %}
+{% extends "./base.html" %}
 {% load static %}
 
 {% block title %} Blog {% endblock %}
@@ -11,7 +11,7 @@
 <h1>Postari</h1>
 {% for post in posts %}
     <div class="post">
-        <a href="#">
+        <a href="./{{post.name}}">
         <h3>{{ post.name }}</h3>
         <p>{{ post.content|truncatewords:50 }}</p>
         <p>Autor: {{ post.author_name }}</p>
